@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="description" content="手形割引の受取額、返済金額、返済回数、収入印紙税額をシミュレーションいたします。
+ご利用を検討される前に、参考にしてみて下さい。" />
+<meta name="keywords" content="手形割引,シミュレーション,返済金額,返済回数,収入印紙税額、試算" />
+<title>株式会社クレイリッシュ - シミュレーション</title>
+<link rel="stylesheet" href="../css/set.css">
+<link rel="stylesheet" href="../css/style.css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/common2.js"></script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css" media="screen" />
+
+<script type="text/javascript">
+
+$(function(){
+     
+$(".footer_link p").click(function(){
+    $(this).next("ul").slideToggle();
+    $(this).children("span").toggleClass("open");
+}); 
+ 
+$(".footer_link dt").click(function(){
+    $(this).next("dd").slideToggle();
+    $(this).next("dd").siblings("dd").slideUp();
+    $(this).toggleClass("open");    
+    $(this).siblings("dt").removeClass("open");
+});
+ 
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper-new">
+<?php $Path = "./"; include(dirname(__FILE__).'/../include/header.html'); ?>
+          
+          <div class="li_txt">
+          <div class="outer">HOME　＞シミュレーション</div>
+          </div>
+
+    <div id="contents_top">
+    <div class="head_img001">
+      シミュレーション
+      </div>
+    </div>
+
+    
+    <div class="contents_wrapper">
+    <div class="contents-na">
+   <div class="outer">
+   <div id="left-wap">
+
+<!-- ▼ここから本文▼ -->
+
+<a name="p01"></a>
+<div class="category">
+<div class="txt-title">手形割引シミュレーション</div>
+<div class="kei_box"><div class="kei_box01"></div><div class="kei_box02"></div><div class="clear"></div></div>
+
+<div class="txt-wap">
+<p>現在お客様がお持ちの手形について、割引をした場合の、受取額をシミュレーションいたします。<br>
+ご利用を検討される前に、参考にしてみて下さい。</p>
+  <FORM name="simulation"><table class="billdiscount01">
+        <tr>
+                          <td width="30%" align="center" bgcolor="#F5f5f5" class="style3">手形額面金額</td>
+      <td align="left" bgcolor="#FFFFFF"> <input type="text"  size="12" name="kn" onChange="isNum(this.value)" style="text-align: right;">
+                          <b>円</b><span class="style3">（半角でご入力下さい）</span></td>
+                </tr>
+                        <tr>
+                          <td align="center" bgcolor="#F5f5f5" class="style3">支払期日までの日数</td>
+                        <td align="left" bgcolor="#FFFFFF"> <select size="1" name="tuki">
+                              <option value="30">30日</option>
+                              <option value="60">60日</option>
+                              <option value="90">90日</option>
+                              <option value="120">120日</option>
+                              <option value="150">150日</option>
+                              <option value="180">180日</option>
+                            </select>
+                          <span class="style3">（期日までのおよその日数を選択して下さい）</span></td>
+                        </tr>
+                        <tr>
+                          <td align="center" bgcolor="#F5f5f5" class="style3">割引予定の利率</td>
+                          <td align="left" bgcolor="#FFFFFF"><select size="1" name="kinri">
+                            <option value="3.0">3.0%</option>
+                            <option value="4">4%</option>
+                            <option value="5">5%</option>
+                            <option value="6">6%</option>
+                            <option value="7">7%</option>
+                          <option value="8">8%</option>
+                            <option value="9">9%</option>
+                            <option value="10">10%</option>
+                            <option value="11">11%</option>
+                            <option value="12">12%</option>
+                            <option value="13">13%</option>
+                          </select>
+                          （興信所の評価が高い、信用度の高い企業ほど低金利となります）</td>
+                </tr>
+                        <tr>
+                          <td colspan="2" align="center" bgcolor="#F5f5f5" class="style3">
+                              <input name="button3" type="button" align="top" onClick="calc()" value="　計　算　">
+                            <br>
+                              <br>
+                              試算結果：　お渡し金額の概算は
+                                  <input type="text" value="" name="answer" size="10" style="font-size: 1.5em; text-align: right;">
+                                円　となります。
+                          </td>
+                        </tr>
+                    </table>
+  </td>※シミュレーションの結果は、あくまで参考値です。<br />
+手取り金額を正確にお知りになりたい場合には、<a href="../form/request.html">小切手・手形割引見積り依頼フォーム</a>をご利用ください。
+  </FORM>
+</div>
+<p class="page-up"><a href="#top">▲ Page Top</a></p>
+</div>
+<div class="clear"></div>
+
+<a name="p02"></a>
+<div class="category">
+<div class="txt-title">返済金額シミュレーション</div>
+<div class="kei_box"><div class="kei_box01"></div><div class="kei_box02"></div><div class="clear"></div></div>
+
+<div class="txt-wap">
+  <p>お金を借りる前に考えておきたい返済計画。<br>
+    借りたお金を全額返済するまでに、毎月いくら返済し、どれくらいの期間がかかるのか・・・。<br>
+    下のシミュレーションにて、返済計画を立ててみて下さい。</p>
+  <FORM name=form1 action="" method=post>
+                              <table class="billdiscount01">
+                                <tr>
+                                  <td width="30%" bgcolor="#F5f5f5" class="style3">ご希望金額</td>
+                            <td bgcolor="#FFFFFF"><INPUT name=kibou_gaku id="kibou_gaku" size=8 maxLength=5>
+                                      <span class="style3">万円　（ご希望金額を<font color="#FF0000">半角</font>・1万円単位でご入力下さい）<font color="#003366"><br>
+                                      </font>　　　　　　　　　 　例 100万円の場合→<font color="#FF0000">100</font>と入力</span><span class="txt_12 style43"> </span></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#F5f5f5" class="style3">ご返済回数</td>
+                                  <td bgcolor="#FFFFFF"><INPUT name=hen_kaisu id="hen_kaisu" size=8 maxLength=3>
+                                      <span class="style3">回　　 （ご返済回数を<font color="#FF0000">半角</font>でご入力下さい）</span></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#F5f5f5" class="style3">お借入れ実質年利 </td>
+                                  <td bgcolor="#FFFFFF"><INPUT name=nenri id="nenri" size=8>
+                                      <span class="style3">％　　　（実質年利を<font color="#FF0000">半角</font>でご入力下さい）</span></td>
+                                </tr>
+                                <tr bgcolor="#F0ffff" class="style3">
+                                  <td align="center" colspan="2" bgcolor="#F5f5f5"><FONT color=#666666>
+                                      <input onClick=shumirate_2(this.form) type=button value=　　計　算　　 name=button>
+                                      　　
+                                      <input type=reset value=　クリア　 name=reset2>
+                                      <br>
+                                      <br>
+                                      </FONT><span class="style83">1回あたりのご返済金額は</span>
+                                    <INPUT name=ans_kingaku id="ans_kingaku" size="10" style="font-size: 1.5em; text-align: right;" readOnly>
+                                    <span class="style83">円です　 </span></td>
+                                </tr>
+                          </table></FORM>	
+		    <p>※シミュレーションの結果は、あくまで参考値です。<br />
+		      実際には、返済期間等により上記内容と異なります。</p>
+
+</div>
+
+</div>
+<div class="clear"></div>
+
+<a name="p04"></a>
+<div class="category">
+<div class="txt-title">返済回数シミュレーション</div>
+<div class="kei_box"><div class="kei_box01"></div><div class="kei_box02"></div><div class="clear"></div></div>
+
+<div class="txt-wap">
+  <p>お金を借りる前に考えておきたい返済計画。<br>
+    借りたお金を全額返済するまでに、毎月いくら返済し、どれくらいの期間がかかるのか・・・。<br>
+    下のシミュレーションにて、返済計画を立ててみて下さい。</p>
+  <FORM name=form2 action="" method=post>
+                    <table class="billdiscount01">
+                      <tr>
+                        <td width="200" bgcolor="#F5f5f5" class="style3">ご希望金額</td>
+                        <td bgcolor="#FFFFFF"><p>
+                          <INPUT name=kibou_gaku id="kibou_gaku3" size=8 maxLength=5>
+                        <span class="style3">万円　（ご希望金額を<font color="#FF0000">半角</font>・1万円単位でご入力下さい）<br>
+                            　　　　　　　　　　　例 100万円の場合→<font color="#FF0000">100</font> と入力 </span></p></td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#F5f5f5" class="style3">毎月のご返済金額</td>
+                        <td bgcolor="#FFFFFF"><INPUT name=hen_gaku_m id="hen_gaku_m2" size=8>
+                                  <span class="style3">万円　（ご返済金額を<font color="#FF0000">半角</font>・1万円単位でご入力下さい）</span></td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#F5f5f5" class="style3">お借入れ実質年利</td>
+                        <td bgcolor="#FFFFFF"><INPUT name=nenri id="nenri3" size=8>
+                          <span class="style3">％　　 (実質年利を<font color="#FF0000">半角</font>でご入力下さい）</span></td>
+                      </tr>
+                      <tr bgcolor="#F0ffff" class="style3">
+                        <td align="center" colspan="2" bgcolor="#F5f5f5">
+                          
+                            <input onClick=shumirate_1(this.form) type=button value=　　計　算　　 name=button2>
+                             　　
+                             <input type=reset value=　クリア　 name=reset>
+                            <br>
+                           <br>
+                              <span class="style83">ご返済回数は</span>
+                            <INPUT name=ans_kaisu id="ans_kaisu2" size=5 style="font-size: 1.5em; text-align: right;" readOnly>
+                            <span class="style83">回です</span>
+                        </td>
+                      </tr>
+                    </table>
+            </FORM>
+					  <p>※シミュレーションの結果は、あくまで参考値です。<br />
+		      実際には、返済期間等により上記内容と異なります。<br>
+			  </p>
+	      </div>
+<p class="page-up"><a href="#top">▲ Page Top</a></p>
+</div>
+<div class="clear"></div>
+
+<a name="p05"></a>
+<div class="category">
+<div class="txt-title">収入印紙税額シミュレーション</div>
+<div class="kei_box"><div class="kei_box01"></div><div class="kei_box02"></div><div class="clear"></div></div>
+
+<div class="txt-wap">
+  <p>様々な証書に貼る収入印紙の金額を自動的に求めることができます。<br>
+    下のシミュレーションにて、試算してみて下さい。</p>
+  <form method="POST"  onSubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1">
+                              <input type="hidden" name="VTI-GROUP" value="0">
+	                          <table class="billdiscount01">
+                                <tr>
+                                  <td width="200" bgcolor="#F5f5f5" >1. 目的を選択して下さい。</td>
+<td height="27" bgcolor="#FFFFFF" ><select size="1" name="mo" >
+                                        <option value="1">売上代金等の領収書</option>
+                                        <option value="2">約束手形、為替手形</option>
+                                        <option value="3">金銭消費貸借契約書など</option>
+                                  </select></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#F5f5f5">2. 金額を入力して下さい。　</td>
+                                  <td height="27" bgcolor="#FFFFFF"><input type="text" name="kin" size="20" >
+                                  <span class="style3">円</span></td>
+                                </tr>
+                                <tr>
+                                  <td height="36" colspan="2" align="center" bgcolor="#F5f5f5">
+                                  
+                                      <input type="button" value="　　計算　　" name="keisan" onClick="inshi(this.form)">　　<input type="reset" value="　クリア　" name="B1">
+                                    <br>
+                                    <br>
+                                    <span class="style83">印紙税額は</span>
+                                          <input type="text" name="ins" size="10" style="font-size: 1.5em; text-align: right;">
+                                          <span class="style83">円になります。</span></td>
+                                </tr>
+                              </table>
+	 </form>		  
+     </div>  
+<p>◆印紙税額を一覧表でご覧になりたい方はこちら　→<a href="../common_img/1404.pdf" target="_blank">　<u>印紙税額一覧表</u></a></p>
+
+</div>
+<p class="page-up"><a href="#top">▲ Page Top</a></p>
+</div>
+
+<!-- △ここまで本文△ -->
+
+</div>
+</div>
+    </div>
+    </div>
+
+    <?php $Path = "./"; include(dirname(__FILE__).'/../include/footer.html'); ?>
+         
+	</div>
+</body>
+</html>

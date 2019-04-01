@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="description" content="#">
+<meta name="keywords" content="#">
+<title>株式会社クレイリッシュ｜トップページ</title>
+<link rel="stylesheet" href="css/set.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/common2.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen" />
+
+<script type="text/javascript">
+jQuery(function($){
+    $('.zoom_slider').bxSlider({
+        auto: true,
+        pager: false,
+        controls: false,
+		infiniteLoop:false,
+        mode: 'fade',
+        speed: 1000,
+        pause: 6000,
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+	$('.slick-box3').slick({
+		dots: true, // スライダー下部に表示される、ドット状のページネーションです
+		infinite: true, // 無限ループ
+		autoplay: true,
+		autoplaySpeed:6000,
+		appendArrows: $('#arrows'),
+		dotsClass: 'slick-dots',
+		pauseOnDotsHover: false,
+		lazyLoad: 'ondemand',
+		variableWidth: true,
+		speed: 500, // 切り替わりのスピード
+		slidesToShow: 7, //通常 1024px以上の領域では4画像表示
+		slidesToScroll: 1, 
+		responsive: [{
+			breakpoint: 1024,settings: { //601px～1024pxでは3画像表示
+				slidesToShow: 4,
+				slidesToScroll: 4,
+			}
+		},
+		{
+			breakpoint: 600,settings: { //481px～600pxでは2画像表示
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,settings: {//480px以下では1画像表示
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		}]
+	});
+});
+
+$(function(){
+     
+$(".footer_link p").click(function(){
+    $(this).next("ul").slideToggle();
+    $(this).children("span").toggleClass("open");
+}); 
+ 
+$(".footer_link dt").click(function(){
+    $(this).next("dd").slideToggle();
+    $(this).next("dd").siblings("dd").slideUp();
+    $(this).toggleClass("open");    
+    $(this).siblings("dt").removeClass("open");
+});
+ 
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper-new">
+<header id="pt">
+    <div class="outer_haed">
+    <div class="outer">
+		<div class="head-logo"><a href="../"><img src="./common_img/head_logo.jpg" alt="株式会社クレイリシュ"></a></div>
+        
+        
+        <div class="header-contact-wap">
+        <div class="header-contact-sac">
+        <form id="form1" action="自分のサイトURL">
+        <input id="sbox"  id="s" name="s" type="text" placeholder="キーワードを入力" />
+        <input id="sbtn" type="submit" value="検索" />
+        </form>
+        </div>
+        <div class="header-contact">
+        <div class="haed_bi01">営業時間9:00～17︓00</div>
+        <div class="haed_tel01">お問い合わせ0120-161-901</div>
+        <div class="clear"></div>
+          </div>
+        </div>
+          
+          
+          
+          <div class="clear"></div>
+          </div>
+          </div>
+          
+          <div class="outer_haed_s">
+          <div class="outer_h">
+		<div class="head-logo_s"><a href="../"><img src="./common_img/head_logo02.jpg" alt="株式会社クレイリシュ"></a></div>
+        <div class="header-contact_s">
+        <div class="haed_tel02_s"><a href="tel:0120161901"><img src="./common_img/tel_ic.png" alt="電話"></a></div>
+        <div class="haed_bi01_s">営業時間9:00～17:00</div>
+        <div class="haed_tel01_s">0120-161-901</div>
+        <div class="clear"></div>
+          </div>
+          <div class="header-contact-sac">
+        <form id="form1" action="自分のサイトURL">
+        <input id="sbox"  id="s" name="s" type="text" placeholder="キーワードを入力" />
+        <input id="sbtn" type="submit" value="検索" />
+        </form>
+        </div>
+        <div class="clear"></div>
+          </div>
+          </div>
+          
+          
+          
+          <div id="fNav" class="nav-global">
+          <div class="outer">
+          
+<!-- ▼▼ここからグローバルメニュー▼▼ -->
+
+<nav class="Nav" role="navigation" aria-label="メインメニュー">
+<p class="navbtn"><a href="javascript:void(0)"><span>メニューを開く</span></a></p>
+<ul>
+  <li><a href="">TOP</a></li>
+  <li class="parent"><a href="javascript:void(0)">営業案内</a>
+<ul class="submenu">
+  <li><a href="billdiscount/">手形割引</a></li>
+    <li><a href="billdiscount/den.html">でんさいの割引</a></li>
+    <li><a href="checkdiscount/">小切手換金</a></li>
+    <li><a href="unsecuredloan/">無担保融資</a></li>
+    <li><a href="mortgagebackedlending/">不動産担保融資</a></li>
+    <li><a href="careandmedical/">介護・診療報酬担保融資</a></li>
+    <li><a href="sharecollateral/">株券担保融資</a></li>
+    <li><a href="golfmember/">ゴルフ会員権担保融資</a></li>
+    <li><a href="personalsecurity/">動産担保融資</a></li>
+    <li><a href="factoring/">ファクタリング</a></li>
+     <li><a href="lease/">リース</a></li>
+</ul>
+</li>
+  <li class="parent"><a href="javascript:void(0)">会社案内</a>
+<ul class="submenu">
+   <li><a href="company/profile.html">会社概要</a></li>
+    <li><a href="company/profile.html#p02">沿革</a></li>
+    <li><a href="company/greeting.html">社長挨拶</a></li>
+    <li><a href="company/recruit.html">採用情報</a></li>
+    <li><a href="company/map.html">案内図</a></li>
+</ul>
+</li>
+
+<li class="parent"><a href="javascript:void(0)">お申込・見積り</a>
+<ul class="submenu">
+   <li><a href="form/request.html">手形割引ご依頼フォーム</a></li>
+    <li><a href="form/application.html">ご融資申し込みフォーム</a></li>
+</ul>
+</li>
+
+<li class="parent"><a href="javascript:void(0)">お客様窓口</a>
+<ul class="submenu">
+   <li><a href="contact/index.html">お客様窓口</a></li>
+</ul>
+</li>
+
+<li class="parent"><a href="javascript:void(0)">ダウンロード</a>
+<ul class="submenu">
+   <li><a href="download/index.html#p01">割引申込書</a></li>
+    <li><a href="download/index.html#p02">融資申込書</a></li>
+    <li><a href="download/index.html#p03">基本取引約定書</a></li>
+    <li><a href="download/index.html#p04">保証人申告書</a></li>
+    <li><a href="download/index.html#p05">補箋紙</a></li>
+</ul>
+</li>
+
+<li class="parent"><a href="javascript:void(0)">シュミレーション</a>
+<ul class="submenu">
+   <li><a href="simulation/index.html#p01">手形割引シミュレーション</a></li>
+     <li><a href="simulation/index.html#p03">返済金額シミュレーション</a></li>
+    <li><a href="simulation/index.html#p04">返済回数シミュレーション</a></li>
+    <li><a href="simulation/index.html#p05">収入印紙税額シミュレーション</a></li>
+</ul>
+</li>
+</ul>
+<!-- /.Nav --></nav>
+<!-- △△ここまでグローバルメニュー△△ -->
+           </div>
+          </div>
+          </header>
+
+    <div id="contents_top">
+    <ul class="zoom_slider onlyPC">
+    <li><img src="images/top_img01.jpg"><span class="s-fade-text">めまぐるしく豹変する社会</span></li>
+    <li><img src="images/top_img02.jpg"><span class="s-fade-text">経営者の手腕が問われている</span></li>
+    <li><img src="images/top_img03.jpg"><span class="s-fade-text">いざという時の切り札は・・・</span></li>
+    <li><img src="images/top_img04.jpg"><span class="s-fade-text">信頼のフィナンシャルパートナー</span></li>
+    </ul>
+    
+    <ul class="zoom_slider onlySP">
+    <li><img src="images/top_img01_s.jpg"><span class="s-fade-text">めまぐるしく豹変する社会</span></li>
+    <li><img src="images/top_img02_s.jpg"><span class="s-fade-text">経営者の手腕が問われている</span></li>
+    <li><img src="images/top_img03_s.jpg"><span class="s-fade-text">いざという時の切り札は・・・</span></li>
+    <li><img src="images/top_img04_s.jpg"><span class="s-fade-text">信頼のフィナンシャルパートナー</span></li>
+    </ul>
+    </div>
+		    
+    <div class="contents">
+   <div class="outer001">
+   <div class="outer02">
+   <ul class="slick-box3">
+    <li>
+			<a href="./billdiscount/introduction.html"><img src="images/sli_01.jpg" alt="手形割引"></a>
+			<p class="caption">全国で発行された手形を迅速かつ低利で現金化いたします。 </p>
+		</li>
+    <li>
+			<a href="./checkdiscount/"><img src="images/sli_02.jpg" alt="小切手換金"></a>
+			<p class="caption">集金したその日でも、小切手が現金化できます。 </p>
+		</li>
+    <li>
+			<a href="./billdiscount/den.html"><img src="images/sli_03.jpg" alt="でんさいの割引"></a>
+			<p class="caption">電子記録債権（でんさい）を換金いたします。 </p>
+		</li>
+    <li>
+			<a href="./unsecuredloan/"><img src="images/sli_04.jpg" alt="無担保融資"></a>
+			<p class="caption">原則として担保や保証人が不要で、迅速な融資が可能です。</p>
+		</li>
+    <li>
+			<a href="./mortgagebackedlending/"><img src="images/sli_05.jpg" alt="不動産担保融資"></a>
+			<p class="caption">不動産業者向けと一般事業者向けの二種類があります。</p>
+		</li>
+    <li><a href="./careandmedical/"><img src="images/sli_06.jpg" alt="介護・診療報酬"></a>
+    <p class="caption">診療報酬や、介護報酬を担保に融資が受けられる商品です。</p>
+    </li>
+   <li>
+			<a href="./factoring/"><img src="images/sli_07.jpg" alt="ファクタリング"></a>
+			<p class="caption">売掛金債権を、迅速かつ適正な価格で買い取りします。</p>
+		</li>
+    <li>
+			<a href="./sharecollateral/"><img src="images/sli_08.jpg" alt="株券担保融資"></a>
+			<p class="caption">上場株式を担保として、時価の80％までの融資が可能です。</p>
+		</li>
+    <li>
+			<a href="./golfmember/"><img src="images/sli_09.jpg" alt="ゴルフ会員権"></a>
+			<p class="caption">ゴルフ会員権を担保とする融資です。</p>
+		</li>
+    <li>
+			<a href="./personalsecurity/"><img src="images/sli_10.jpg" alt="動産を担保融資"></a>
+			<p class="caption">動産を担保として適正な価格で評価し、ご融資いたします。</p>
+		</li>
+    </ul>
+     </div>
+     </div>
+     </div>
+     
+    <div class="contents">
+    <div class="outer">
+    <div class="box_war">
+     <ul class="menu">
+          <li class="sbtn01"><a href="./company/profile.html">
+          <div class="bt-title">会社概要</div>
+          <div class="bt-txt">会社概要と沿革および代表者の挨拶、さらに、弊社へお越しいただける場合のアクセス方法がご確認いただけます。</div></a></li>
+          <li class="sbtn02"><a href="./sonota/newrelease.html">
+          <div class="bt-title">手形割引王</div>
+          <div class="bt-txt">煩わしい手形割引の申込が、日本初の無料スマホアプリを利用して僅か30秒で完了します。（特許出願中）</div></a></li>
+          <li class="sbtn03"><a href="https://j-president.net/saitama/claylish/" target="_blank">
+          <div class="bt-title">動画メッセージ</div>
+          <div class="bt-txt">事業者向け金融に心血を注ぐ弊社代表の起業理由や融資の考え方、企業再生に至るまで、金融のエピソードを熱く語る。</div></a></li>
+          <li class="sbtn04"><a href="./sonota/">
+          <div class="bt-title">高金利被害の実態</div>
+          <div class="bt-txt">債権の売買を偽装するヤミ金融が跋扈しています。これらの実態解明と対策をレポートしています。</div></a></li>
+          <li class="sbtn05"><a href="./billdiscount/introduction.html">
+          <div class="bt-title">手形割引入門</div>
+          <div class="bt-txt">賢い手形割引方法や融通手形による被害防止方法など、手形に関する様々な情報やノウハウが満載です。</div></a></li>
+          <li class="sbtn06"><a href="./company/recruit.html">
+          <div class="bt-title">採用情報</div>
+          <div class="bt-txt">金融に関する営業または債権管理職の経験を有する方を募集しております。弊社は社員の定着率が高いのが自慢です。</div></a></li>
+          <li class="sbtn07"><a href=".company/profile.html">
+          <div class="bt-title">社名の由来</div>
+          <div class="bt-txt">縁の下の舞として、中小企業を陰で支える土（クレイ）のような企業でありたいという思いが込められています。</div></a></li>
+          <li class="sbtn08"><a href="./contact/">
+          <div class="bt-title">お客様窓口</div>
+          <div class="bt-txt">弊社に対するご意見ご要望・ご相談・お問い合わせ等を受付けております。お気軽にご相談ください。</div></a></li>
+          </ul>
+          </div>
+          <div class="clear"></div>
+          </div>
+          
+          </div>
+          
+          <div class="contents">
+          <div class="outer">
+          <div class="news_obi"><div class="txt-title_obi">お知らせ</div></div>
+          <div class="txt_info"><span class="red bold">重要なお知らせ</span>　弊社社名を悪用した融資を名目とする詐欺集団にご注意ください。</div>
+          <div id="nProgram">
+		<dl>
+        <dt>2018年03月01</dt>
+        <dd><a href="#">日本初の手形割引申込みアプリ「手形割引王」をリリース</a></dd>
+		</dl>
+        <dl>
+        <dt>2018年02月28</dt>
+        <dd><a href="#">TEIKOKUNEWSに弊社代表のインタビュー記事が掲載されました</a></dd>
+		</dl>
+        <dl>
+        <dt>2018年01月01</dt>
+        <dd><a href="#">東経情報にヤミ金融に関するレポートが掲載されました。</a></dd>
+		</dl>
+        <dl>
+        <dt>2017年12月20</dt>
+        <dd><a href="joblist/">年末年始の営業時間について</a></dd>
+		</dl>
+        <dl>
+        <dt>2017年11月10</dt>
+        <dd><a href="#">全ての応接スペースが個室化されました。</a></dd>
+		</dl>
+        <dl>
+        <dt>2017年08月25</dt>
+        <dd><a href="#">弊社商号の商標登録が完了しました</a></dd>
+		</dl>
+        <dl>
+        <dt>2017年04月05</dt>
+        <dd><a href="#">3月26日付の産経新聞に弊社の記事が掲載されました。</a></dd>
+		</dl>
+        <dl>
+        <dt>2017年03月31</dt>
+        <dd><a href="#">高速道路へのアクセスが改善されました。</a></dd>
+		</dl>
+        </div>
+          </div>
+          </div>
+          
+          <div class="contents">
+          <div class="outer">
+          <ul class="me-li">
+          <li class="li1"><a href="./information/">個人情報保護方針</a></li>
+          <li class="li2"><a href="./information/index.html#p04">反社会勢力に対する基本方針</a></li>
+          <li class="li3"><a href="./information/index.html#p01">金融ADRについて</a></li>
+          <li class="li4"><a href="./contact/">ごお客様窓口</a></li>
+          <li class="li5"><a href="https://www.j-fsa.or.jp/" target="_blank">日本貸金業協会</a></li>
+          <li class="li6"><a href="http://www.nbfa.jp/" target="_blank">全国事業者金融協会</a></li>
+          <li class="li7"><a href="./company/map.html">アクセスマップ</a></li>
+          <li class="li8"><a href="./area/">地域別ファイナンス情報</a></li>
+          </ul>
+          <div class="clear"></div>
+          </div>
+          </div>
+          
+    <footer>
+    <a id="pagetop" href="#pt"><img src="./common_img/ic_pt.png"></a>
+	<div class="outer">
+     <div id="foot01">
+
+    <div class="foot-link_box">
+    
+    <ul class="footer_link">
+			<li>
+            <p><span>■HOME</span></p>
+            <ul>
+            <li><a href="./topics/">トピックス</a></li>
+            </ul>
+            </li>
+           
+           <li><a href="./company/profile.html">■社名の由来</a></li>
+           <li><a href="./sonota/newrelease.html">■手形割引王</a></li>
+           
+           <li><p><span>■手形割引入門</span></p>
+           <ul>
+           <li><a href="./billdiscount/introduction.html">手形割引入門</a></li>
+           <li><a href="./billdiscount/professional.html">手形割引の達人</a></li>
+           <li><a href="./billdiscount/prevention.html">融通手形の被害防止法</a></li>
+           <li><a href="./billdiscount/checkpoint.html">手形割引業者の選別方法</a></li>
+           </ul>
+           
+           <li><a href="./sonota/">■高金利被害の実態</a></li>
+           <li><p><span>■お客様窓口</span></p>
+           <ul>
+           <li><a href="./contact/">ご意見・ご相談</a></li>
+           </ul>
+           </li>
+           
+           </ul>
+           </div>
+                
+                
+           
+            <div class="foot-link_box">
+            <ul class="footer_link">
+			<li><a href="./billdiscount/">■営業案内</a></span></p></li>
+            <li><a href="./billdiscount/">■手形割引</a></li>
+            <li><a href="./billdiscount/den.html">■でんさいの割引</a></li>
+            <li><a href="./unsecuredloan/">■無担保融資</a></li>
+            <li><a href="./mortgagebackedlending/">■不動産担保融資</a></li>
+            <li><a href="./careandmedical/">■介護報酬担保融資</a></li>
+            <li><a href="./careandmedical/">■診療報酬担保融資</a></li>
+            <li><a href="./personalsecurity/">■動産担保融資</a></li>
+            <li><a href="./checkdiscount/">■小切手の換金</a></li>
+            <li><a href="./factoring/">■ファクタリング</a></li>
+            <li><a href="./golfmember/">■ゴルフ会員権担保融資</a></li>
+            <li><a href="./sharecollateral/">■株券担保融資</a></li>
+            </ul>
+            </div>
+            
+			 <div class="foot-link_box">
+             <ul class="footer_link">
+             <li><p><span>■会社案内</span></p>
+				<ul>
+                <li><a href="./company/profile.html">会社概要・沿革</a></li>
+                <li><a href="./company/greeting.html">社長挨拶・案内図</a></li>
+                </ul>
+                </li>
+            <li>
+                <p><span>■お申込/お見積り</span></p>
+                <ul>
+                <li><a href="./form/request.html">割引見積依頼フォーム</a></li>
+                <li><a href="./form/application.html">融資申込みフォーム</a></li>
+                </ul>
+            </li>
+            <li>
+                <p><span>■ダウンロード</span></p>
+                <ul>
+                <li><a href="./download/#p01">割引申込書</a></li>
+                <li><a href="./download/#p02">融資申込書</a></li>
+                <li><a href="./download/#p03">基本取引約定書</a></li>
+                <li><a href="./download/#p04">保証人申告書</a></li>
+                <li><a href="./download/#p05">補箋紙</a></li>
+                </ul>
+                </li>
+                </ul>
+                </div>
+                
+             <div class="foot-link_box">
+		<ul class="footer_link">
+			<li>
+				<p><span>■シミュレーション</span></p>
+				<ul>
+                <li><a href="./simulation/#p01">手形割引シミュレーション</a></li>
+                <li><a href="./simulation/#p02">小切手シミュレーション</a></li>
+                <li><a href="./simulation/#p03">返済金額シミュレーション</a></li>
+                <li><a href="./simulation/#p04">返済回数シミュレーション</a></li>
+                <li><a href="./simulation/#p05">収入印紙税額シミュレーション</a></li>
+                </ul>
+                </li>
+                <li>
+                <a href="./area/">■エリア別ファイナンス情報</a>
+                </li>
+                <li>
+                <a href=".company/recruit.html">■採用情報</a>
+                </li>
+                <li>
+                <p><span>■個人情報保護方針</span></p>
+                <ul>
+                <li><a href="./information/index.html#p04">反社会勢力に対する基本方針</a></li>
+                <li><a href="./information/index.html#p01">金融ADR</a></li>
+                <li><a href="./information/index.html#p03">貸金業改正について</a></li>
+                </ul>
+                </li>
+                </ul>
+                </div>
+                <div class="clear"></div>
+                </div>
+                <div class="footer_compny">
+                株式会社クレイリッシュ<br>
+                〒337-0051<br>
+                埼玉県さいたま市見沼区東大宮五丁目３３-１２<br>
+                TEL:048-682-2300<br>
+                FAX:048-682-2302<br>
+                E-mail:info@901901.jp<br>
+                Copyright©2018 claylish Inc All Ridht Reserved
+                </div>
+                
+                </div>
+                </footer>
+	</div>
+</body>
+</html>

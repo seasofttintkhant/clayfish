@@ -1,0 +1,840 @@
+@charset "euc-jp";
+
+/* ----- メニューボタンのフォントを設定をします（ボタン外観は画像を変更して下さい） ----- */
+/* ボタン・リンク無し */
+/* ====================
+サイドメニュー1　営業品目
+==================== */
+/* ボタン設定 */
+ul.smenu1 li {
+	width: 190px;
+	height: 35px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 35px;
+	background-image:  url(../common_img/menu_snavi_on.jpg);
+	text-indent: 18px;	/* テキスト左の余白 */
+	color: #3300CC;		/* リンク無しの時の文字色 */
+}
+
+/* リンク有りボタン設定 */
+ul.smenu1 li a {
+	width: 190px;
+	height: 35px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 35px;
+	text-decoration: none;
+	text-indent: 18px;	/* liと同じにする */
+	font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
+	font-size: 14px;
+}
+
+/* リンク・通常時 */
+ul.smenu1 li a:link,ul.smenu1 li a:visited {
+	background-image:  url(../common_img/menu_snavi_off.jpg);
+	color: #666666;
+}
+
+/* リンク・ロールオーバー時 */
+ul.smenu1 li a:hover,ul.smenu1 li a:active {
+	background-image:  url(../common_img/menu_snavi_on.jpg);
+	color: #3300CC;
+}
+
+
+/* ====================
+サイドメニュー2　社長紹介等
+==================== */
+/* ボタン設定１ 社長紹介*/
+
+ul.smenu2 li.sban01 {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px 0px 4px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/7218_2.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.smenu2 li.sban01 a {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.smenu2 li.sban01 a:link,ul.smenu2 li.sban01 a:visited {
+	background-image:  url(../common_img/7218_1.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.smenu2 li.sban01 a:hover,ul.smenu2 li.sban01 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定2 貸金業*/
+ul.smenu2 li.sban02 {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px 0px 4px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/ban_img01_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.smenu2 li.sban02 a {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.smenu2 li.sban02 a:link,ul.smenu2 li.sban02 a:visited {
+	background-image:  url(../common_img/ban_img01_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.smenu2 li.sban02 a:hover,ul.smenu2 li.sban02 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定3 NBFA*/
+ul.smenu2 li.sban03 {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px 0px 4px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/ban_img02_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.smenu2 li.sban03 a {
+	width: 190px;
+	height: 72px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.smenu2 li.sban03 a:link,ul.smenu2 li.sban03 a:visited {
+	background-image:  url(../common_img/ban_img02_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.smenu2 li.sban03 a:hover,ul.smenu2 li.sban03 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+
+
+
+/* ====================
+フッターメニュー
+==================== */
+/* フッターメニュー -------------------- */
+/* ボタン設定 */
+ul.ftlink li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	text-indent: 12px;	/* テキスト左の余白 */
+	color: #ffffff;		/* リンク無しの時の文字色 */
+	font-weight:bold;
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+}
+
+/* リンク有りボタン設定 */
+ul.ftlink li a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	text-indent: 12px;	/* liと同じにする */
+}
+
+/* リンク・通常時 */
+ul.ftlink li a:link,ul.ftlink li a:visited {
+	background-image:  url(../common_img/menu_footer_off.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	color: #ffffff;
+}
+
+/* リンク・ロールオーバー時 */
+ul.ftlink li a:hover,ul.ftlink li a:active {
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	color: #FFCC00;
+}
+
+
+
+/* ボタン設定 */
+ul.ftlink2 li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	text-indent: 12px;	/* テキスト左の余白 */
+	color: #ffffff;		/* リンク無しの時の文字色 */
+	font-weight:bold;
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+}
+
+/* リンク有りボタン設定 */
+ul.ftlink2 li a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	text-indent: 12px;	/* liと同じにする */
+}
+
+/* リンク・通常時 */
+ul.ftlink2 li a:link,ul.ftlink2 li a:visited {
+	background-image:  url(../common_img/menu_footer_off.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	color: #ffffff;
+}
+
+/* リンク・ロールオーバー時 */
+ul.ftlink2 li a:hover,ul.ftlink2 li a:active {
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	color: #FFCC00;
+}
+
+/* フッターサブメニュー -------------------- */
+/* ボタン設定 */
+ul.ftsub li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	text-indent: 10px;	/* テキスト左の余白 */
+	color: #ffffff;		/* リンク無しの時の文字色 */
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	font-size:10px;
+	font-weight:normal;
+}
+
+/* リンク有りボタン設定 */
+ul.ftsub li a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	text-indent: 12px;	/* liと同じにする */
+}
+
+/* リンク・通常時 */
+ul.ftsub li a:link,ul.ftsub li a:visited {
+	background-image:  url(../common_img/menu_footer_off.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	color: #ffffff;
+}
+
+/* リンク・ロールオーバー時 */
+ul.ftsub li a:hover,ul.ftsub li a:active {
+	background-image:  url(../common_img/menu_footer_on.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	color: #FFCC00;
+}
+
+
+
+/* ====================
+トップページ - 上段の４つのボタン1
+==================== */
+/* ボタン設定 */
+ul.picup1 li.pic01 {
+	width: 500px;
+	height: 200px;
+	display: block;
+	margin: 0px 10px 10px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img01_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定上段の４つのボタン */
+ul.picup1 li.pic01 a {
+	width: 500px;
+	height: 200px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時上段の４つのボタン */
+ul.picup1 li.pic01 a:link,ul.picup1 li.pic01 a:visited {
+	background-image:  url(../images/pic_img01_off.jpg);
+}
+
+/* リンク・ロールオーバー時上段の４つのボタン */
+ul.picup1 li.pic01 a:hover,ul.picup1 li.pic01 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定上段の４つのボタン */
+ul.picup1 li.pic02 {
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background-image: url(../images/pic_img02_on.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+
+/* リンク有りボタン設定上段の４つのボタン */
+ul.picup1 li.pic02 a {
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	background-image: url(../images/pic_img02_off.jpg);
+}
+/* リンク・通常時上段の４つのボタン */
+ul.picup1 li.pic02 a:link,ul.picup1 li.pic02 a:visited {
+	background-image: url(../images/pic_img02_off.jpg);
+}
+
+/* リンク・ロールオーバー時上段の４つのボタン */
+ul.picup1 li.pic02 a:hover,ul.picup1 li.pic02 a:active {
+	background-image: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定上段の４つのボタン */
+ul.picup1 li.pic03 {
+	width: 500px;
+	height: 150px;
+	display: block;
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img03_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定上段の４つのボタン */
+ul.picup1 li.pic03 a {
+	width: 500px;
+	height: 150px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時上段の４つのボタン */
+ul.picup1 li.pic03 a:link,ul.picup1 li.pic03 a:visited {
+	background-image:  url(../images/pic_img03_off.jpg);
+}
+
+/* リンク・ロールオーバー時上段の４つのボタン */
+ul.picup1 li.pic03 a:hover,ul.picup1 li.pic03 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定上段の４つのボタン */
+ul.picup1 li.pic04 {
+	width: 300px;
+	height: 150px;
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img04_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定上段の４つのボタン */
+ul.picup1 li.pic04 a {
+	width: 300px;
+	height: 150px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時上段の４つのボタン */
+ul.picup1 li.pic04 a:link,ul.picup1 li.pic04 a:visited {
+	background-image:  url(../images/pic_img04_off.jpg);
+}
+
+/* リンク・ロールオーバー時上段の４つのボタン */
+ul.picup1 li.pic04 a:hover,ul.picup1 li.pic04 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+
+
+/* ====================
+トップページ - 下段の４つのボタン
+==================== */
+/* ボタン設定 */
+ul.picup2 li.pic01 {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img05_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定下段の４つのボタン */
+ul.picup2 li.pic01 a {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時下段の４つのボタン */
+ul.picup2 li.pic01 a:link,ul.picup2 li.pic01 a:visited {
+	background-image:  url(../images/pic_img05_off.jpg);
+}
+
+/* リンク・ロールオーバー時下段の４つのボタン */
+ul.picup2 li.pic01 a:hover,ul.picup2 li.pic01 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定下段の４つのボタン */
+ul.picup2 li.pic02 {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img06_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定下段の４つのボタン */
+ul.picup2 li.pic02 a {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時下段の４つのボタン */
+ul.picup2 li.pic02 a:link,ul.picup2 li.pic02 a:visited {
+	background-image:  url(../images/pic_img06_off.jpg);
+}
+
+/* リンク・ロールオーバー時下段の４つのボタン */
+ul.picup2 li.pic02 a:hover,ul.picup2 li.pic02 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定下段の４つのボタン */
+ul.picup2 li.pic03 {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img07_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定下段の４つのボタン */
+ul.picup2 li.pic03 a {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時下段の４つのボタン */
+ul.picup2 li.pic03 a:link,ul.picup2 li.pic03 a:visited {
+	background-image:  url(../images/pic_img07_off.jpg);
+}
+
+/* リンク・ロールオーバー時下段の４つのボタン */
+ul.picup2 li.pic03 a:hover,ul.picup2 li.pic03 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定下段の４つのボタン */
+ul.picup2 li.pic04 {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background-image:  url(../images/pic_img08_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定下段の４つのボタン */
+ul.picup2 li.pic04 a {
+	width: 250px;
+	height: 93px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時下段の４つのボタン */
+ul.picup2 li.pic04 a:link,ul.picup2 li.pic04 a:visited {
+	background-image:  url(../images/pic_img08_off.jpg);
+}
+
+/* リンク・ロールオーバー時下段の４つのボタン */
+ul.picup2 li.pic04 a:hover,ul.picup2 li.pic04 a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+
+
+
+
+/* ====================
+メニュー
+==================== */
+/* ボタン設定 */
+ul.menu li.details {
+	width: 120px;
+	height: 24px;
+	display: block;
+	margin: 0px 0px 4px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/btn_details_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.details a {
+	width: 120px;
+	height: 24px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.details a:link,ul.menu li.details a:visited {
+	background-image:  url(../common_img/btn_details_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.details a:hover,ul.menu li.details a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定 */
+ul.menu li.simulation {
+	width: 460px;
+	height: 30px;
+	display: block;
+	margin: 0px 0px 4px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/btn_simu_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.simulation a {
+	width: 460px;
+	height: 30px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.simulation a:link,ul.menu li.simulation a:visited {
+	background-image:  url(../common_img/btn_simu_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.simulation a:hover,ul.menu li.simulation a:active {
+	background: none;
+}
+
+
+
+/* --********************-- */
+
+/* ボタン設定 */
+ul.menu li.yushi {
+	width: 388px;
+	height: 50px;
+	display: block;
+	margin: 0px 12px 0px 0px;
+	padding: 0px;
+	background-image:  url(../common_img/btn_yushi_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.yushi a {
+	width: 388px;
+	height: 50px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.yushi a:link,ul.menu li.yushi a:visited {
+	background-image:  url(../common_img/btn_yushi_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.yushi a:hover,ul.menu li.yushi a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ボタン設定 */
+ul.menu li.consent {
+	width: 388px;
+	height: 50px;
+	display: block;
+	margin: 0px auto 0px;
+	padding: 0px;
+	background-image:  url(../common_img/btn_consent_on.jpg);
+	text-indent:-9999px;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.consent a {
+	width: 388px;
+	height: 50px;
+	display: block;
+	margin: 0px auto 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.consent a:link,ul.menu li.consent a:visited {
+	background-image:  url(../common_img/btn_consent_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.consent a:hover,ul.menu li.consent a:active {
+	background: none;
+}
+
+/* --********************-- */
+
+/* ====================
+融資一覧
+==================== */
+/* ボタン設定 */
+ul.menu li.loan01 {
+	width: 810px;
+	height: 200px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background-image:  url(../loan/images/loan01_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.loan01 a {
+	height: 200px;
+	display: block;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.loan01 a:link,ul.menu li.loan01 a:visited {
+	background-image:  url(../loan/images/loan01_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.loan01 a:hover,ul.menu li.loan01 a:active {
+	background: none;
+}
+/* --********************-- */
+
+ul.menu li.loan02 {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px 10px 10px 0px;
+	padding: 0px;
+	background-image:  url(../loan/images/loan02_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.loan02 a {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.loan02 a:link,ul.menu li.loan02 a:visited {
+	background-image:  url(../loan/images/loan02_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.loan02 a:hover,ul.menu li.loan02 a:active {
+	background: none;
+}
+/* --********************-- */
+
+ul.menu li.loan03 {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background-image:  url(../loan/images/loan03_on.jpg);
+	text-indent:-9999px;
+	float:right;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.loan03 a {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.loan03 a:link,ul.menu li.loan03 a:visited {
+	background-image:  url(../loan/images/loan03_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.loan03 a:hover,ul.menu li.loan03 a:active {
+	background: none;
+}
+/* --********************-- */
+
+ul.menu li.loan04 {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background-image:  url(../loan/images/loan04_on.jpg);
+	text-indent:-9999px;
+	float:left;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.loan04 a {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.loan04 a:link,ul.menu li.loan04 a:visited {
+	background-image:  url(../loan/images/loan04_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.loan04 a:hover,ul.menu li.loan04 a:active {
+	background: none;
+}
+/* --********************-- */
+
+ul.menu li.loan05 {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background-image:  url(../loan/images/loan05_on.jpg);
+	text-indent:-9999px;
+	float:right;
+}
+
+/* リンク有りボタン設定 */
+ul.menu li.loan05 a {
+	width: 400px;
+	height: 169px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/* リンク・通常時 */
+ul.menu li.loan05 a:link,ul.menu li.loan05 a:visited {
+	background-image:  url(../loan/images/loan05_off.jpg);
+}
+
+/* リンク・ロールオーバー時 */
+ul.menu li.loan05 a:hover,ul.menu li.loan05 a:active {
+	background: none;
+}
+/* --********************-- */
+
