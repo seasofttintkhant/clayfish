@@ -3044,3 +3044,7 @@ ol.qa li {
 }
 }
 /* 1811福島追加ここまで */
+
+.forced-show {
+	display: block !important; 
+}
